@@ -8,20 +8,25 @@ import {
   Page,
   Toolbar,
   Sort,
-  Filter
+  Filter,
+  Edit
 } from "@syncfusion/ej2-react-grids";
 import { useEffect, useState } from "react";
 import { procurementData, employeesGrid } from "../data/dummy";
 import { Header } from "../components";
 import { Link } from "react-router-dom";
+import { DialogFormTemplate } from "../components";
 
 const Data = () => {
   const [toolbarOptions, setToolBarOptions] = useState(null);
   const [editing, setEditing] = useState(null);
+  const editTemplate = (props) => {
+    return (<DialogFormTemplate {...props}/>);
+  }
 
   useEffect(() => {
-    setToolBarOptions(["Search"]);
-    setEditing({ allowDeleting: true, allowEditing: true });
+    setToolBarOptions(["Search", "Edit", "Add", "Delete", "Cancel", "Update"]);
+    setEditing({ allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Dialog', template: editTemplate});
   }, []);
 
   return (
@@ -37,6 +42,7 @@ const Data = () => {
         allowPaging
         allowSorting
         allowFiltering = {true}
+        allowEditing = {true}
         filterSettings = { {type :'Excel'}}
         pageSettings={{ pageCount: 6 }}
         editSettings={editing}
@@ -47,7 +53,7 @@ const Data = () => {
             <ColumnDirective key={index} {...item} />
           ))}
         </ColumnsDirective>
-        <Inject services={[Search, Toolbar, Page, Sort, Filter]} />
+        <Inject services={[Search, Toolbar, Page, Sort, Filter, Edit]} />
       </GridComponent>
     </div>
   );
