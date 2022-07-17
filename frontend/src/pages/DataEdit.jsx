@@ -6,8 +6,8 @@ import { Headerbk } from "../components";
 
 
 const DataEdit = () => {
-  const [setToolBarOptions] = useState(null);
-  const [setEditing] = useState(null);
+  const [,setToolBarOptions] = useState(null);
+  const [,setEditing] = useState(null);
   // const [toolbarOptions, setToolBarOptions] = useState(null);
   // const [editing, setEditing] = useState(null);
 
