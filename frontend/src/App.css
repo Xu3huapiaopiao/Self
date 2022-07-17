@@ -27,8 +27,8 @@
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
-::-webkit-calendar-picker-indicator{
-  color: #ffffff;
+ ::-webkit-calendar-picker-indicator{
+  filter: invert(1) ;
 }
 
 /* color-picker style  */
@@ -183,10 +183,23 @@ label+input+select {
 
 /* Only the submit button is matched by this selector,
        but to be sure you could use an id or class for that button */
-
 input+input {
   float: right;
 }
+
+/* <!--------------- Cancel submit button ---------------!> */
+/* Makes the button in the middle */
+.middle{
+  float: none;
+  margin-left: 20vw;
+}
+/* Give spacing for the buttons */
+.middle button{
+  margin-left: 3vw;
+
+}
+
+
 
 
 

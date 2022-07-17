@@ -80,7 +80,7 @@ export const dropdownData = [
   },
 ];
 
-const gridEmployeeProfile = (props) => (
+const NameofOpportunity = (props) => (
   <div className="flex items-center gap-2">
     <p>{props.Name}</p>
   </div>
@@ -90,39 +90,149 @@ const gridEmployeeProfile = (props) => (
 
 export const employeesGrid = [
   { headerText: 'Name Of Opportunity',
-    width: '150',
-    template: gridEmployeeProfile,
-    textAlign: 'Center' },
+    width: '400',
+    template: NameofOpportunity,
+    textAlign: 'Center', 
+  
+  },
+
   { field: 'Name',
     headerText: '',
-    width: '0',
+    width: '300',
     textAlign: 'Center',
   },
   { field: 'Tender',
     headerText: 'Tender No.',
-    width: '170',
+    width: '300',
     textAlign: 'Center',
   },
   { headerText: 'H&PS Account Level',
-    width: '120',
+    width: '300',
     textAlign: 'Center',
     field:'HPS' },
 
   { field: 'HireDate',
     headerText: 'Parent Agency (Ministry Level)',
-    width: '135',
+    width: '300',
     format: 'yMd',
     textAlign: 'Center' },
 
   { field: 'ReportsTo',
     headerText: 'Agency',
-    width: '120',
+    width: '300',
     textAlign: 'Center' },
 
   { field: 'PublishedDate',
     headerText: 'Published Date',
-    width: '125',
+    width: 'a300',
     textAlign: 'Center' },
+
+  { field: 'PlannedCloseDate',
+    headerText: 'Planned Close Date',
+    width: '300',
+    textAlign: 'Center' },
+    
+  { field: 'ExtendedCloseDate',
+    headerText: 'Extended Close Date',
+    width: '300',
+    textAlign: 'Center' },
+
+  { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'TwoEnvelopeBidding',
+    headerText: ' Two Envelope Bidding',
+    width: '300',
+    textAlign: 'Center' },  
+    
+    { field: 'TenderType',
+    headerText: 'Tender Type',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'CoveredunderWTO-GPA/FTA',
+    headerText: 'Covered under WTO-GPA/FTA',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'ProcurementNature',
+    headerText: 'Procurement Nature',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'ProcurementMethod',
+    headerText: 'Procurement Method',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+    { field: 'Days',
+    headerText: 'Offer Validity Duration (Days)',
+    width: '300',
+    textAlign: 'Center' },  
+
+  
 ];
 
 
@@ -135,7 +245,11 @@ export const procurementData = [
     Tender: 'FINAGDETT20300002',
     HireDate: 'MOF',
     ReportsTo: 'Ministry Of Finance',
-    HPS:'MOF'
+    HPS:'MOF',
+    PlannedCloseDate: 'NaN',
+    ExtendedCloseDate:'NaN',
+    Days:'NaN',
+    ProcurementType:'NaN'
   
   },
   {
@@ -145,6 +259,10 @@ export const procurementData = [
     HireDate: 'MOM',
     HPS:'CPF',
     ReportsTo: 'Central Provident Fund Board ',
+    PlannedCloseDate: 'NaN',
+    ExtendedCloseDate:'NaN',
+    Days:'NaN',
+    ProcurementType:'NaN'
        
   },
   {
@@ -154,6 +272,10 @@ export const procurementData = [
     HireDate: 'MOM',
     HPS:'CPF',
     ReportsTo: 'Central Provident Fund Board',
+    PlannedCloseDate: 'NaN',
+    ExtendedCloseDate:'NaN',
+    Days:'NaN',
+    ProcurementType:'NaN'
        
   },
   {
@@ -163,6 +285,10 @@ export const procurementData = [
     HireDate: 'MOM',
     HPS:'CPF',
     ReportsTo: 'Central Provident Fund Board',
+    PlannedCloseDate: 'NaN',
+    ExtendedCloseDate:'NaN',
+    Days:'NaN',
+    ProcurementType:'NaN'
        
   },
   // {

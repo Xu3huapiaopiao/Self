@@ -1,7 +1,9 @@
 import React from "react";
 
 import { useEffect, useState } from "react";
-import { Header } from "../components";
+import { Headerbk } from "../components";
+
+
 
 const DataEdit = () => {
   const [setToolBarOptions] = useState(null);
@@ -16,8 +18,23 @@ const DataEdit = () => {
 
   return (
     <div className="bg-color-own m-2 md:m-12 p-2 md:p-10 rounded-3xl">
-      <Header title="GeBiz Procurement" />
-
+      
+      
+       <Headerbk title="GeBiz Procurement" />
+      
+      {/* <div class="buttontop">
+      <button
+            class="text-black rounded-2xl  "
+            style={{ backgroundColor: "red",color:"white", width: "120px", height: "40px" }}
+            type="reset"
+            value="Reset"
+          ><p
+          style={{color:"white" }}
+          >
+            Clear 
+            </p>
+          </button>
+      </div> */}
       <form class="form1">
         <div>
           <label class="text-white" style={{ fontWeight: "bold" }}>
@@ -109,7 +126,7 @@ const DataEdit = () => {
         </div>
 
         <div class="pt-6">
-          <label class="text-white" style={{ fontWeight: "bold" }}>
+          <label class="text-white" style={{ fontWeight: "bold"  }}>
             Published Date :{" "}
           </label>
           <input
@@ -117,8 +134,7 @@ const DataEdit = () => {
             style={{
               borderWidth: 1,
               borderColor: "white",
-              backgroundColor: "#111827",
-              color: '#ffffff'
+              backgroundColor: "#111827"
             }}
             name="date"
             id="newdate"
@@ -191,7 +207,7 @@ const DataEdit = () => {
           />
         </div>
 
-        <div class="row pt-6 ">
+        <div class="row pt-6 middle">
           <button
             class="text-black rounded-2xl "
             style={{ backgroundColor: "white", width: "120px", height: "40px" }}

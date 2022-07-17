@@ -33,7 +33,7 @@ const Data = () => {
 
       <GridComponent
         dataSource={procurementData}
-        width="auto"
+        width="70vw"
         allowPaging
         allowSorting
         allowFiltering = {true}
