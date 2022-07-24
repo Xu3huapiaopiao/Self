@@ -32,7 +32,7 @@ const Data = () => {
 
   return (
     <div className="placeholder-div-classname-for-tag-respondents-button">
-      <Button text="Tag Respondents" bgColor="#a100ff" borderRadius="5px"></Button>
+      <Link to="/Data/TagToTrack"><Button text="Tag Respondents" bgColor="#a100ff" borderRadius="5px"></Button></Link>
       <div className="bg-color-own m-2 md:m-10 mt-24 p-2 md:p-10  rounded-3xl">
         <nav>
           <Link to="DataEdit">Data Edit</Link>

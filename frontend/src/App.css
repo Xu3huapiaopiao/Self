@@ -199,7 +199,7 @@ input+input {
 
 }
 
-.placeholder-div-classname-for-tag-respondents-button > button{
+.placeholder-div-classname-for-tag-respondents-button > a > button{
   color: #fff;
   margin-right: 5vw;
   float: right;
