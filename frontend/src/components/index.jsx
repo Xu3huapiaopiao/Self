@@ -5,3 +5,5 @@ export { default as Footer } from './Footer';
 export { default as UserProfile } from './UserProfile';
 export { default as Header} from './Header'
 export { default as Headerbk} from './Headerbk'
+export { default as DialogFormTemplate} from './DialogFormTemplate'
+export { default as DragBox} from './DragBox'

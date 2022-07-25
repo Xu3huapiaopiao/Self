@@ -16,10 +16,12 @@ const rejectStyle = {
   borderColor: "#ff1744",
 };
 
-function Upload(props) {
+/* function Upload(props) { */
+function Upload() {
   // Excel file upload handling
   const [excelFile, setExcelFile] = useState(null);
-  const [excelFileError, setExcelFileError] = useState(null);
+  const [setExcelFileError] = useState(null);
+  /* const [excelFileError, setExcelFileError] = useState(null); */
 
   // On button submit, set data
   const [excelData, setExcelData] = useState(null);
@@ -36,10 +38,11 @@ function Upload(props) {
   // State to set border color on file reject for upload box
   const [borderReject, setborderReject] = useState(false);
 
-  // Ensure that file type is excel / xls
-  const fileType = [
+  const newLocal = [
     "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
   ];
+  // Ensure that file type is excel / xls
+  const fileType = newLocal;
 
   // Excel file submit function
   const handleSubmit = (e) => {
@@ -92,13 +95,13 @@ function Upload(props) {
         setborderReject(borderReject);
       }, 3000);
     }
-  }, []);
+  }, [borderReject, fileType, onUpload, setExcelFileError, showFile]);
 
   const {
     getRootProps,
     getInputProps,
-    acceptedFiles,
-    fileRejections,
+    // acceptedFiles,
+    // fileRejections,
     isDragActive,
     isDragAccept,
     isDragReject,

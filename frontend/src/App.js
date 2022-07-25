@@ -4,6 +4,8 @@ import { TooltipComponent } from "@syncfusion/ej2-react-popups";
 
 import Data from "./pages/Data";
 import DataEdit from "./pages/DataEdit";
+import Filter from "./pages/Filter";
+import TagToTrack from "./pages/TagToTrack";
 import { Navbar, Footer, Sidebar } from "./components";
 import Dashboard from "./pages/Dashboard_graph";
 import Upload from "./pages/Upload";
@@ -22,7 +24,7 @@ const App = () => {
       setCurrentColor(currentThemeColor);
       setCurrentMode(currentThemeMode);
     }
-  }, []);
+  }, [setCurrentColor, setCurrentMode]);
 
   return (
     <div className={currentMode === "Dark" ? "dark" : ""}>
@@ -60,6 +62,8 @@ const App = () => {
                 <Route path="/Dashboard" element={<Dashboard />} />
                 <Route path="/Data" element={<Data />} />
                 <Route path="/Data/DataEdit" element={<DataEdit />} />
+                <Route path="/Data/Filter" element={<Filter />} />
+                <Route path="/Data/TagToTrack" element={<TagToTrack />} />
                 <Route path="/Upload" element={<Upload />} />
               </Routes>
             </div>

@@ -7,7 +7,7 @@ function DragBox({
   showFile,
   acceptedFile,
 }) {
-  if (acceptedFile == "wrongfile") {
+  if (acceptedFile === "wrongfile") {
     return (
       <div>
         <center>
